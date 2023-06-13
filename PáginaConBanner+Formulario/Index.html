@@ -1,0 +1,114 @@
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        .contenidoWeb {
+            background-color: #000000;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenidoWeb img {
+            max-width: 100%;
+            height: 100%;
+        }
+
+        .contenidoMenu {
+            background-color: #0d2c46;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFFFFF;
+        }
+
+        .contenidoFormulario {
+            background-color: #111111;
+            padding: 20px;
+            color: #FFFFFF;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"],
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 2px solid #0B84E4;
+            border-radius: 5px;
+            background-color: #222222;
+            color: #FFFFFF;
+            box-shadow: 0 0 5px #0B84E4;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #0B84E4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #FFFFFF;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0963AD;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="contenidoWeb">
+            <img src="Imagenes/80sbanner.png">
+        </div>
+
+        <div class="contenidoMenu" style="background-color: #0e0d3c">
+            ¡ ¡ Bienvenido ! !
+        </div>
+    </div>
+
+    <div class="contenidoFormulario">
+        <br><br>
+        <b>Formulario de contacto:</b>
+        <br><br>
+        <form>
+            <label for="fname">Introducir nombre:</label> <br>
+            <input type="text" id="fname" name="fname">
+
+            <p>Lenguaje de Programación de etiquetas:</p>
+
+            <label for="html">HTML</label>
+            <input type="radio" name="selectLanguage1" value="html"> <br>
+
+            <label for="css">CSS</label>
+            <input type="radio" name="selectLanguage1" value="css"> <br> <br>
+
+            <label for="state">Estado Civil Soltero</label><br />
+            <input type="checkbox" id="gusta" name="state"><br />
+
+            <label for="state">Estado Civil Casado</label><br />
+            <input type="checkbox" id="gusta" name="state"><br />
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <script>
+        const formulario = document.querySelector('form');
+        const nombreInput = document
